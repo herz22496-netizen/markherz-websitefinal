@@ -163,7 +163,7 @@
         }
     </style>
 </head>
-<body class="antialiased selection:bg-[#b8985c] selection:text-white">
+<body class="antialiased selection:bg-[#b8985c] selection:text-white pb-20 md:pb-0">
 
     <header class="bg-white/95 backdrop-blur-md sticky top-0 z-50 shadow-sm border-b border-gray-100">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
@@ -384,6 +384,11 @@
 
     </main>
 
+    <!-- Sticky mobile CTA -->
+    <div id="sticky-cta" class="md:hidden fixed bottom-0 inset-x-0 z-40 p-3 bg-white/95 backdrop-blur-md border-t border-gray-200 shadow-[0_-4px_12px_rgba(0,0,0,0.08)] transition-transform duration-300" style="padding-bottom:calc(0.75rem + env(safe-area-inset-bottom));">
+        <a href="#booking" class="btn-primary block w-full text-center">Book a Lesson / Réserver un cours</a>
+    </div>
+
     <footer class="bg-gray-950 py-8 border-t border-gray-800">
         <div class="container mx-auto px-6 text-center text-gray-500 text-sm">
             <p>&copy; 2026 Mark Herz. All Rights Reserved. / Tous droits réservés.</p>
@@ -408,6 +413,15 @@
                 }, 150);
             });
         });
+
+        // Hide the sticky CTA while the booking calendar is on screen
+        const stickyCta = document.getElementById('sticky-cta');
+        const bookingEl = document.getElementById('booking');
+        if (stickyCta && bookingEl && 'IntersectionObserver' in window) {
+            new IntersectionObserver(entries => {
+                stickyCta.style.transform = entries[0].isIntersecting ? 'translateY(110%)' : '';
+            }, { threshold: 0.15 }).observe(bookingEl);
+        }
 
         const dateInput = document.querySelector('input[type="date"]');
         if(dateInput) {
