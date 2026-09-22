@@ -66,16 +66,46 @@
       "founder": {
         "@id": "https://www.markherz.ca/#person"
       },
-      "areaServed": {
-        "@type": "City",
-        "name": "Montréal",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Montréal",
-          "addressRegion": "QC",
-          "addressCountry": "CA"
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Montréal",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Montréal",
+            "addressRegion": "QC",
+            "addressCountry": "CA"
+          }
+        },
+        {
+          "@type": "Place",
+          "name": "Ville-Marie"
+        },
+        {
+          "@type": "Place",
+          "name": "Île-des-Sœurs"
+        },
+        {
+          "@type": "Place",
+          "name": "Hochelaga-Maisonneuve"
+        },
+        {
+          "@type": "Place",
+          "name": "Westmount"
+        },
+        {
+          "@type": "Place",
+          "name": "VilMont-Royal"
+        },
+        {
+          "@type": "Place",
+          "name": "Plateau-Mont-Royal"
+        },
+        {
+          "@type": "Place",
+          "name": "Outremont"
         }
-      },
+      ],
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Montréal",
@@ -603,6 +633,13 @@
     .bio__pairs .pair{grid-template-columns:1fr}
     .bio__pairs .pair>*{max-width:76ch;padding-right:0}
     @media(min-width:760px){.cards{grid-template-columns:1fr 1fr}}
+    .qchips{display:flex;flex-wrap:wrap;gap:var(--s2)}
+    .qchips a{
+        display:inline-flex;align-items:center;min-height:52px;padding:0 18px;
+        border:var(--rule);text-decoration:none;
+        font-size:var(--t-small);font-weight:800;letter-spacing:-0.01em;
+    }
+    .qchips a:hover{background:var(--signal)}
     </style>
 </head>
 <body>
@@ -650,6 +687,7 @@
                     <div class="prose"><h2>Pourquoi apprendre à domicile</h2><p>Pour les familles, c'est souvent la seule formule tenable : pas de transport le soir, pas d'attente dans une salle, et deux enfants peuvent s'enchaîner dans la même heure. Pour l'élève, il y a un avantage moins évident : il joue sur sa chaise, avec son pupitre, dans la pièce où il pratiquera le lendemain. Ce qui se corrige pendant le cours se corrige donc à l'endroit exact où le problème se répète.</p><h2>Ce qu'il faut prévoir chez vous</h2><ul><li><span class="tick">&#10003;</span> <span>Une chaise stable et sans accoudoirs, à hauteur normale.</span></li><li><span class="tick">&#10003;</span> <span>Un coin calme, hors du passage et sans télévision allumée.</span></li><li><span class="tick">&#10003;</span> <span>Un pupitre, ou à défaut une table.</span></li><li><span class="tick">&#10003;</span> <span>Une guitare classique à cordes de nylon, à la bonne taille pour l'élève.</span></li><li><span class="tick">&#10003;</span> <span>Un repose-pied ou un support de guitare. Si vous n'en avez pas encore, écrivez-moi avant le premier cours.</span></li></ul><h2>Secteurs desservis</h2><p>Montréal et les environs immédiats. Comme la faisabilité dépend du quartier et de l'heure, indiquez-moi votre secteur par courriel ou par téléphone avant de réserver : je confirme, ou je propose le studio ou la formule en ligne.</p><h2>Le premier cours</h2><p>Le premier cours sert à établir une base : évaluation du niveau réel, position du corps et des mains, accordage, choix d'une première pièce et mise en place d'un plan de pratique quotidien. S'il s'agit d'un enfant, la dernière partie du cours se fait avec le parent, pour que le travail de la semaine soit clair pour tout le monde.</p><h2>Durées et formules</h2><p>Sessions de 30, 45 ou 60 minutes. Cours d'essai unique, ou cours hebdomadaire récurrent jusqu'à douze semaines. Paiement par virement Interac ou en espèces.</p></div>
                     <figure class="shot"><picture><source srcset="/cours-guitare-classique-montreal-2.webp" type="image/webp"><img src="/cours-guitare-classique-montreal-2.jpg" alt="Mark Herz enseignant la guitare classique à un élève" width="1400" height="927" loading="lazy" decoding="async"></picture></figure>
                     <div class="faq"><h2 class="faq__h">Questions fréquentes</h2><h3>Quels quartiers de Montréal sont desservis ?</h3><p>Montréal et les environs immédiats. Écrivez-moi votre adresse ou votre quartier avant de réserver pour que je confirme.</p><h3>Y a-t-il des frais de déplacement ?</h3><p>Cela dépend du secteur et de l'heure. Écrivez-moi et je vous le dis avant que vous réserviez quoi que ce soit.</p><h3>Faut-il déjà posséder une guitare ?</h3><p>Oui, une guitare classique à cordes de nylon à la bonne taille. Si vous n'avez pas encore acheté, écrivez-moi avant : le mauvais instrument rend les premiers mois inutilement difficiles.</p><h3>Le parent doit-il rester pendant le cours ?</h3><p>Pour un jeune enfant, la présence d'un parent pendant les premières semaines aide beaucoup, surtout pour l'accordage et la routine de pratique.</p><h3>Peut-on alterner domicile et cours en ligne ?</h3><p>Oui, plusieurs élèves fonctionnent ainsi, par exemple en ligne les semaines chargées.</p></div>
+                    <h3 class="faq__h" style="margin-top:var(--s5)">Quartiers desservis</h3><p style="margin-top:var(--s2);max-width:74ch">Le cours à domicile se donne notamment dans ces secteurs. Confirmez votre adresse avant de réserver, pour qu'on valide l'heure ensemble.</p><div style="margin-top:var(--s3)"><div class="qchips"><a href="/cours-de-guitare-ville-marie/">Ville-Marie</a><a href="/cours-de-guitare-ile-des-soeurs/">l'Île-des-Sœurs</a><a href="/cours-de-guitare-hochelaga/">Hochelaga-Maisonneuve</a><a href="/cours-de-guitare-westmount/">Westmount</a><a href="/cours-de-guitare-ville-mont-royal/">Ville Mont-Royal</a><a href="/cours-de-guitare-plateau-mont-royal/">le Plateau-Mont-Royal</a><a href="/cours-de-guitare-outremont/">Outremont</a></div></div>
                 </div>
             </div>
         </section>
