@@ -66,16 +66,46 @@
       "founder": {
         "@id": "https://www.markherz.ca/#person"
       },
-      "areaServed": {
-        "@type": "City",
-        "name": "Montréal",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Montréal",
-          "addressRegion": "QC",
-          "addressCountry": "CA"
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Montréal",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Montréal",
+            "addressRegion": "QC",
+            "addressCountry": "CA"
+          }
+        },
+        {
+          "@type": "Place",
+          "name": "Ville-Marie"
+        },
+        {
+          "@type": "Place",
+          "name": "Île-des-Sœurs"
+        },
+        {
+          "@type": "Place",
+          "name": "Hochelaga-Maisonneuve"
+        },
+        {
+          "@type": "Place",
+          "name": "Westmount"
+        },
+        {
+          "@type": "Place",
+          "name": "VilMont-Royal"
+        },
+        {
+          "@type": "Place",
+          "name": "Plateau-Mont-Royal"
+        },
+        {
+          "@type": "Place",
+          "name": "Outremont"
         }
-      },
+      ],
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Montréal",
@@ -603,6 +633,13 @@
     .bio__pairs .pair{grid-template-columns:1fr}
     .bio__pairs .pair>*{max-width:76ch;padding-right:0}
     @media(min-width:760px){.cards{grid-template-columns:1fr 1fr}}
+    .qchips{display:flex;flex-wrap:wrap;gap:var(--s2)}
+    .qchips a{
+        display:inline-flex;align-items:center;min-height:52px;padding:0 18px;
+        border:var(--rule);text-decoration:none;
+        font-size:var(--t-small);font-weight:800;letter-spacing:-0.01em;
+    }
+    .qchips a:hover{background:var(--signal)}
     </style>
 </head>
 <body>
@@ -650,6 +687,7 @@
                     <div class="prose"><h2>Why learn at home</h2><p>For families it is often the only workable format: no driving in the evening, no waiting room, and two children can follow each other within the same hour. For the student there is a less obvious advantage: they play on their own chair, at their own stand, in the room where they will practise tomorrow. Whatever gets corrected during the lesson gets corrected in the exact place where the problem repeats itself.</p><h2>What to have ready</h2><ul><li><span class="tick">&#10003;</span> <span>A stable chair without armrests, at normal height.</span></li><li><span class="tick">&#10003;</span> <span>A quiet corner, out of the way and with no television on.</span></li><li><span class="tick">&#10003;</span> <span>A music stand, or failing that a table.</span></li><li><span class="tick">&#10003;</span> <span>A nylon-string classical guitar in the right size for the student.</span></li><li><span class="tick">&#10003;</span> <span>A footstool or guitar support. If you do not have one yet, write to me before the first lesson.</span></li></ul><h2>Areas covered</h2><p>Montreal and the immediate surroundings. Because it depends on the neighbourhood and the time of day, tell me your area by email or phone before booking: I will confirm, or suggest the studio or the online format instead.</p><h2>The first lesson</h2><p>The first lesson sets the foundation: an honest assessment of the current level, body and hand position, tuning, choosing a first piece and setting up a daily practice plan. For a child, the last part of the lesson happens with the parent, so that the week's work is clear to everyone.</p><h2>Lengths and formats</h2><p>Sessions of 30, 45 or 60 minutes. A single trial lesson, or a recurring weekly lesson up to twelve weeks. Payment by Interac e-Transfer or cash.</p></div>
                     <figure class="shot"><picture><source srcset="/cours-guitare-classique-montreal-3.webp" type="image/webp"><img src="/cours-guitare-classique-montreal-3.jpg" alt="Classical guitar lesson at Mark Herz&#x27;s studio in Montreal" width="1400" height="927" loading="lazy" decoding="async"></picture></figure>
                     <div class="faq"><h2 class="faq__h">Frequently asked questions</h2><h3>Which Montreal neighbourhoods do you cover?</h3><p>Montreal and the immediate surroundings. Send me your address or neighbourhood before booking so I can confirm.</p><h3>Is there a travel fee?</h3><p>It depends on the area and the time of day. Write to me and I will tell you before you book anything.</p><h3>Do I need to own a guitar already?</h3><p>Yes, a nylon-string classical guitar in the right size. If you have not bought one yet, write to me first: the wrong instrument makes the first months needlessly hard.</p><h3>Does a parent need to stay during the lesson?</h3><p>For a young child, having a parent present for the first few weeks helps a great deal, especially with tuning and the practice routine.</p><h3>Can we alternate between home and online lessons?</h3><p>Yes, several students work that way, going online during busy weeks.</p></div>
+                    <h3 class="faq__h" style="margin-top:var(--s5)">Areas covered</h3><p style="margin-top:var(--s2);max-width:74ch">Lessons at home are given in these areas among others. Confirm your address before booking so we can settle the time together.</p><div style="margin-top:var(--s3)"><div class="qchips"><a href="/en/guitar-lessons-ville-marie/">Ville-Marie</a><a href="/en/guitar-lessons-nuns-island/">Nuns' Island</a><a href="/en/guitar-lessons-hochelaga/">Hochelaga-Maisonneuve</a><a href="/en/guitar-lessons-westmount/">Westmount</a><a href="/en/guitar-lessons-town-of-mount-royal/">Town of Mount Royal</a><a href="/en/guitar-lessons-plateau-mont-royal/">the Plateau-Mont-Royal</a><a href="/en/guitar-lessons-outremont/">Outremont</a></div></div>
                 </div>
             </div>
         </section>
