@@ -66,16 +66,46 @@
       "founder": {
         "@id": "https://www.markherz.ca/#person"
       },
-      "areaServed": {
-        "@type": "City",
-        "name": "Montréal",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Montréal",
-          "addressRegion": "QC",
-          "addressCountry": "CA"
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Montréal",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Montréal",
+            "addressRegion": "QC",
+            "addressCountry": "CA"
+          }
+        },
+        {
+          "@type": "Place",
+          "name": "Ville-Marie"
+        },
+        {
+          "@type": "Place",
+          "name": "Île-des-Sœurs"
+        },
+        {
+          "@type": "Place",
+          "name": "Hochelaga-Maisonneuve"
+        },
+        {
+          "@type": "Place",
+          "name": "Westmount"
+        },
+        {
+          "@type": "Place",
+          "name": "VilMont-Royal"
+        },
+        {
+          "@type": "Place",
+          "name": "Plateau-Mont-Royal"
+        },
+        {
+          "@type": "Place",
+          "name": "Outremont"
         }
-      },
+      ],
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Montréal",
@@ -603,6 +633,13 @@
     .bio__pairs .pair{grid-template-columns:1fr}
     .bio__pairs .pair>*{max-width:76ch;padding-right:0}
     @media(min-width:760px){.cards{grid-template-columns:1fr 1fr}}
+    .qchips{display:flex;flex-wrap:wrap;gap:var(--s2)}
+    .qchips a{
+        display:inline-flex;align-items:center;min-height:52px;padding:0 18px;
+        border:var(--rule);text-decoration:none;
+        font-size:var(--t-small);font-weight:800;letter-spacing:-0.01em;
+    }
+    .qchips a:hover{background:var(--signal)}
     </style>
 </head>
 <body>
@@ -650,6 +687,7 @@
                     <div class="prose"><h2>Un adulte n'apprend pas comme un enfant</h2><p>Un adulte comprend vite, veut savoir pourquoi un exercice existe, et dispose de beaucoup moins de temps. L'enseignement s'adapte à ces trois faits : on explique le mécanisme, on écarte les exercices sans utilité immédiate, et on construit tout autour d'une pratique courte et quotidienne plutôt qu'autour de longues séances impossibles à tenir.</p><h2>Ce que couvrent les trois premiers mois</h2><ul><li><span class="tick">&#10003;</span> <span>La position du corps, des bras et des mains, qui décide de presque tout ce qui suivra.</span></li><li><span class="tick">&#10003;</span> <span>La main droite : pouce, index, majeur, annulaire, et un son propre avant la vitesse.</span></li><li><span class="tick">&#10003;</span> <span>L'accordage en autonomie, dès les premières semaines.</span></li><li><span class="tick">&#10003;</span> <span>Les premières pièces complètes à une voix, jouées du début à la fin.</span></li><li><span class="tick">&#10003;</span> <span>La lecture de la musique, introduite lentement mais dès le départ.</span></li><li><span class="tick">&#10003;</span> <span>Une routine de pratique de quinze à vingt minutes, réellement tenable.</span></li></ul><h2>Faut-il savoir lire la musique ?</h2><p>Non, pas pour commencer. La lecture s'apprend en même temps que l'instrument, progressivement. En guitare classique elle finit par être indispensable, parce que le répertoire est écrit, mais ce n'est pas une condition d'entrée.</p><h2>Quelle guitare acheter</h2><p>Une guitare classique à cordes de nylon, en taille 4/4 pour un adulte. Une guitare folk à cordes d'acier, même excellente, ne convient pas : le manche est plus étroit, les cordes plus dures, et la technique de la main droite n'est pas la même. Un instrument d'entrée de gamme correct suffit largement pour les premières années. Écrivez-moi avant d'acheter si vous hésitez.</p><h2>Combien de pratique</h2><p>Quinze à vingt minutes par jour battent deux heures le dimanche, et ce n'est pas une question de motivation : la coordination des doigts se construit par répétitions rapprochées. Un élève adulte qui pratique cinq jours sur sept progresse de façon visible d'un cours à l'autre.</p></div>
                     <figure class="shot"><picture><source srcset="/cours-guitare-classique-montreal-1.webp" type="image/webp"><img src="/cours-guitare-classique-montreal-1.jpg" alt="Cours de guitare classique avec Mark Herz à Montréal" width="1400" height="927" loading="lazy" decoding="async"></picture></figure>
                     <div class="faq"><h2 class="faq__h">Questions fréquentes</h2><h3>Je n'ai aucune base en musique. Est-ce un problème ?</h3><p>Non. La majorité des élèves adultes commencent sans aucune base et le premier cours part de zéro.</p><h3>Je n'ai pas encore de guitare. Dois-je en acheter une avant ?</h3><p>Écrivez-moi avant d'acheter. Le mauvais instrument rend les premiers mois inutilement pénibles, et le conseil prend cinq minutes.</p><h3>Combien de temps avant de jouer un vrai morceau ?</h3><p>Quelques semaines pour une pièce simple jouée en entier, et c'est volontaire : on vise un morceau complet tôt plutôt qu'une accumulation d'exercices.</p><h3>Puis-je jouer autre chose que du classique ?</h3><p>Mon enseignement est classique. Cela dit, la technique et la lecture apprises ici servent ensuite dans à peu près tous les styles.</p><h3>Les cours en ligne conviennent-ils à un débutant ?</h3><p>Oui, à condition de bien placer la caméra pour que la main droite soit visible.</p></div>
+                    
                 </div>
             </div>
         </section>
