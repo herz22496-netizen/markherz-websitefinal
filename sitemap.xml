@@ -1,4 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.markherz.ca/</loc><lastmod>2026-09-07</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://www.markherz.ca/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://www.markherz.ca/"/>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://www.markherz.ca/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.markherz.ca/"/>
+    <lastmod>2026-09-22</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://www.markherz.ca/cours-de-guitare-en-ligne/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://www.markherz.ca/cours-de-guitare-en-ligne/"/>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://www.markherz.ca/en/online-guitar-lessons/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.markherz.ca/cours-de-guitare-en-ligne/"/>
+    <lastmod>2026-09-22</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.markherz.ca/cours-de-guitare-a-domicile/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://www.markherz.ca/cours-de-guitare-a-domicile/"/>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://www.markherz.ca/en/guitar-lessons-at-home/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.markherz.ca/cours-de-guitare-a-domicile/"/>
+    <lastmod>2026-09-22</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.markherz.ca/preparation-auditions-concours/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://www.markherz.ca/preparation-auditions-concours/"/>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://www.markherz.ca/en/audition-competition-preparation/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.markherz.ca/preparation-auditions-concours/"/>
+    <lastmod>2026-09-22</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.markherz.ca/cours-de-guitare-debutant-adulte/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://www.markherz.ca/cours-de-guitare-debutant-adulte/"/>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://www.markherz.ca/en/adult-beginner-guitar-lessons/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.markherz.ca/cours-de-guitare-debutant-adulte/"/>
+    <lastmod>2026-09-22</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.markherz.ca/en/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://www.markherz.ca/"/>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://www.markherz.ca/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.markherz.ca/"/>
+    <lastmod>2026-09-22</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://www.markherz.ca/en/online-guitar-lessons/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://www.markherz.ca/cours-de-guitare-en-ligne/"/>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://www.markherz.ca/en/online-guitar-lessons/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.markherz.ca/cours-de-guitare-en-ligne/"/>
+    <lastmod>2026-09-22</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.markherz.ca/en/guitar-lessons-at-home/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://www.markherz.ca/cours-de-guitare-a-domicile/"/>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://www.markherz.ca/en/guitar-lessons-at-home/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.markherz.ca/cours-de-guitare-a-domicile/"/>
+    <lastmod>2026-09-22</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.markherz.ca/en/audition-competition-preparation/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://www.markherz.ca/preparation-auditions-concours/"/>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://www.markherz.ca/en/audition-competition-preparation/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.markherz.ca/preparation-auditions-concours/"/>
+    <lastmod>2026-09-22</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.markherz.ca/en/adult-beginner-guitar-lessons/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://www.markherz.ca/cours-de-guitare-debutant-adulte/"/>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://www.markherz.ca/en/adult-beginner-guitar-lessons/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.markherz.ca/cours-de-guitare-debutant-adulte/"/>
+    <lastmod>2026-09-22</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>
