@@ -66,16 +66,46 @@
       "founder": {
         "@id": "https://www.markherz.ca/#person"
       },
-      "areaServed": {
-        "@type": "City",
-        "name": "Montréal",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Montréal",
-          "addressRegion": "QC",
-          "addressCountry": "CA"
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Montréal",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Montréal",
+            "addressRegion": "QC",
+            "addressCountry": "CA"
+          }
+        },
+        {
+          "@type": "Place",
+          "name": "Ville-Marie"
+        },
+        {
+          "@type": "Place",
+          "name": "Île-des-Sœurs"
+        },
+        {
+          "@type": "Place",
+          "name": "Hochelaga-Maisonneuve"
+        },
+        {
+          "@type": "Place",
+          "name": "Westmount"
+        },
+        {
+          "@type": "Place",
+          "name": "VilMont-Royal"
+        },
+        {
+          "@type": "Place",
+          "name": "Plateau-Mont-Royal"
+        },
+        {
+          "@type": "Place",
+          "name": "Outremont"
         }
-      },
+      ],
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Montréal",
@@ -603,6 +633,13 @@
     .bio__pairs .pair{grid-template-columns:1fr}
     .bio__pairs .pair>*{max-width:76ch;padding-right:0}
     @media(min-width:760px){.cards{grid-template-columns:1fr 1fr}}
+    .qchips{display:flex;flex-wrap:wrap;gap:var(--s2)}
+    .qchips a{
+        display:inline-flex;align-items:center;min-height:52px;padding:0 18px;
+        border:var(--rule);text-decoration:none;
+        font-size:var(--t-small);font-weight:800;letter-spacing:-0.01em;
+    }
+    .qchips a:hover{background:var(--signal)}
     </style>
 </head>
 <body>
@@ -650,6 +687,7 @@
                     <div class="prose"><h2>Ce que couvre la préparation</h2><ul><li><span class="tick">&#10003;</span> <span>Le choix du programme, en fonction des exigences précises de chaque établissement ou concours et de ce que l'élève défend le mieux.</span></li><li><span class="tick">&#10003;</span> <span>La mémorisation, travaillée comme une compétence à part et non comme une conséquence de la répétition.</span></li><li><span class="tick">&#10003;</span> <span>Le son, les nuances et la direction musicale, c'est-à-dire ce qui distingue deux candidats qui jouent les mêmes notes.</span></li><li><span class="tick">&#10003;</span> <span>Le passage sur scène : entrée, installation, accordage devant un jury, silence avant la première note.</span></li><li><span class="tick">&#10003;</span> <span>La gestion du trac, par des simulations d'audition répétées plutôt que par des conseils généraux.</span></li><li><span class="tick">&#10003;</span> <span>L'enregistrement des vidéos de présélection.</span></li><li><span class="tick">&#10003;</span> <span>La théorie et la formation auditive, quand l'établissement les évalue.</span></li></ul><h2>Un calendrier réaliste</h2><p>Six à neuf mois avant la date est la fenêtre confortable. Trois mois restent jouables si le niveau technique est déjà là. La règle qui compte : le programme doit être en place et mémorisé environ six semaines avant l'audition. Ces six dernières semaines ne servent plus à apprendre des notes, elles servent à rendre la prestation constante, jour après jour, y compris un matin de février dans une salle froide.</p><h2>Les établissements de Montréal</h2><p>McGill, le Conservatoire de musique de Montréal, l'Université de Montréal et les programmes de cégep en musique ont chacun leurs exigences de répertoire, leurs épreuves théoriques et leur culture d'audition. Mark a fait son baccalauréat à McGill et sa maîtrise au Conservatoire : il connaît ces deux parcours de l'intérieur.</p><h2>Les concours</h2><p>Les concours comportent des catégories par âge et par niveau, souvent avec une pièce imposée. Ils sont utiles bien au-delà du résultat : ils donnent une date, une salle et un public, ce qui structure une année de travail mieux que n'importe quel plan de pratique.</p><h2>Les vidéos de présélection</h2><p>La plupart des auditions commencent aujourd'hui par un envoi vidéo. Le cadrage, le son de la pièce, le nombre de prises et le choix de la prise finale font partie du travail : une bonne prestation mal captée est éliminée avant d'avoir été entendue.</p></div>
                     <figure class="shot"><picture><source srcset="/cours-guitare-classique-montreal-3.webp" type="image/webp"><img src="/cours-guitare-classique-montreal-3.jpg" alt="Leçon de guitare classique au studio de Mark Herz, Montréal" width="1400" height="927" loading="lazy" decoding="async"></picture></figure>
                     <div class="faq"><h2 class="faq__h">Questions fréquentes</h2><h3>Combien de mois à l'avance faut-il commencer ?</h3><p>Six à neuf mois est la fenêtre confortable. Trois mois restent possibles si la technique est déjà solide.</p><h3>Faut-il déjà un niveau avancé ?</h3><p>Pour une audition universitaire, oui : il faut un niveau technique établi. Pour les concours, il existe des catégories à tous les âges et à tous les niveaux.</p><h3>Les cours de préparation sont-ils plus longs ?</h3><p>Le format de 60 minutes est recommandé, parce qu'une séance doit pouvoir contenir une simulation complète du programme.</p><h3>La préparation peut-elle se faire en ligne ?</h3><p>En partie. Le travail hebdomadaire fonctionne en ligne, mais il faut prévoir des séances en personne, en particulier les simulations d'audition.</p><h3>Aidez-vous au choix du répertoire ?</h3><p>Oui. Le choix du programme est la première décision de la préparation et elle se prend ensemble, en lisant les exigences de l'établissement ou du concours.</p></div>
+                    
                 </div>
             </div>
         </section>
