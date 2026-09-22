@@ -66,16 +66,46 @@
       "founder": {
         "@id": "https://www.markherz.ca/#person"
       },
-      "areaServed": {
-        "@type": "City",
-        "name": "Montréal",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Montréal",
-          "addressRegion": "QC",
-          "addressCountry": "CA"
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Montréal",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Montréal",
+            "addressRegion": "QC",
+            "addressCountry": "CA"
+          }
+        },
+        {
+          "@type": "Place",
+          "name": "Ville-Marie"
+        },
+        {
+          "@type": "Place",
+          "name": "Île-des-Sœurs"
+        },
+        {
+          "@type": "Place",
+          "name": "Hochelaga-Maisonneuve"
+        },
+        {
+          "@type": "Place",
+          "name": "Westmount"
+        },
+        {
+          "@type": "Place",
+          "name": "VilMont-Royal"
+        },
+        {
+          "@type": "Place",
+          "name": "Plateau-Mont-Royal"
+        },
+        {
+          "@type": "Place",
+          "name": "Outremont"
         }
-      },
+      ],
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Montréal",
@@ -603,6 +633,13 @@
     .bio__pairs .pair{grid-template-columns:1fr}
     .bio__pairs .pair>*{max-width:76ch;padding-right:0}
     @media(min-width:760px){.cards{grid-template-columns:1fr 1fr}}
+    .qchips{display:flex;flex-wrap:wrap;gap:var(--s2)}
+    .qchips a{
+        display:inline-flex;align-items:center;min-height:52px;padding:0 18px;
+        border:var(--rule);text-decoration:none;
+        font-size:var(--t-small);font-weight:800;letter-spacing:-0.01em;
+    }
+    .qchips a:hover{background:var(--signal)}
     </style>
 </head>
 <body>
@@ -650,6 +687,7 @@
                     <div class="prose"><h2>An adult does not learn like a child</h2><p>An adult understands quickly, wants to know why an exercise exists, and has far less time. The teaching adapts to those three facts: the mechanism gets explained, exercises without immediate use get dropped, and everything is built around short daily practice rather than long sessions that never actually happen.</p><h2>What the first three months cover</h2><ul><li><span class="tick">&#10003;</span> <span>Body, arm and hand position, which decides almost everything that follows.</span></li><li><span class="tick">&#10003;</span> <span>The right hand: thumb, index, middle and ring finger, and a clean tone before any speed.</span></li><li><span class="tick">&#10003;</span> <span>Tuning the instrument yourself, from the first weeks.</span></li><li><span class="tick">&#10003;</span> <span>First complete single-line pieces, played from beginning to end.</span></li><li><span class="tick">&#10003;</span> <span>Music reading, introduced slowly but from the start.</span></li><li><span class="tick">&#10003;</span> <span>A practice routine of fifteen to twenty minutes that you can genuinely keep.</span></li></ul><h2>Do I need to read music?</h2><p>Not to begin. Reading is learned alongside the instrument, gradually. In classical guitar it eventually becomes essential, because the repertoire is written down, but it is not an entry requirement.</p><h2>Which guitar to buy</h2><p>A nylon-string classical guitar, full size for an adult. A steel-string acoustic, however good, is not suitable: the neck is narrower, the strings are harder on the fingers, and the right-hand technique is different. A decent entry-level instrument is plenty for the first few years. Write to me before buying if you are unsure.</p><h2>How much practice</h2><p>Fifteen to twenty minutes a day beats two hours on Sunday, and that is not a question of motivation: finger coordination is built through closely spaced repetitions. An adult student who practises five days out of seven improves visibly from one lesson to the next.</p></div>
                     <figure class="shot"><picture><source srcset="/cours-guitare-classique-montreal-2.webp" type="image/webp"><img src="/cours-guitare-classique-montreal-2.jpg" alt="Mark Herz teaching classical guitar to a student" width="1400" height="927" loading="lazy" decoding="async"></picture></figure>
                     <div class="faq"><h2 class="faq__h">Frequently asked questions</h2><h3>I have no musical background at all. Is that a problem?</h3><p>No. Most adult students start with no background, and the first lesson starts from zero.</p><h3>I do not own a guitar yet. Should I buy one first?</h3><p>Write to me before buying. The wrong instrument makes the first months needlessly unpleasant, and the advice takes five minutes.</p><h3>How long before I play a real piece?</h3><p>A few weeks for a simple piece played all the way through, and that is deliberate: a complete piece early beats a pile of exercises.</p><h3>Can I play something other than classical?</h3><p>My teaching is classical. That said, the technique and reading learned here transfer to nearly every style.</p><h3>Are online lessons suitable for a beginner?</h3><p>Yes, as long as the camera is placed so the right hand stays visible.</p></div>
+                    
                 </div>
             </div>
         </section>
