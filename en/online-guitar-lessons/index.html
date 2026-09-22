@@ -66,16 +66,46 @@
       "founder": {
         "@id": "https://www.markherz.ca/#person"
       },
-      "areaServed": {
-        "@type": "City",
-        "name": "Montréal",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Montréal",
-          "addressRegion": "QC",
-          "addressCountry": "CA"
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Montréal",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Montréal",
+            "addressRegion": "QC",
+            "addressCountry": "CA"
+          }
+        },
+        {
+          "@type": "Place",
+          "name": "Ville-Marie"
+        },
+        {
+          "@type": "Place",
+          "name": "Île-des-Sœurs"
+        },
+        {
+          "@type": "Place",
+          "name": "Hochelaga-Maisonneuve"
+        },
+        {
+          "@type": "Place",
+          "name": "Westmount"
+        },
+        {
+          "@type": "Place",
+          "name": "VilMont-Royal"
+        },
+        {
+          "@type": "Place",
+          "name": "Plateau-Mont-Royal"
+        },
+        {
+          "@type": "Place",
+          "name": "Outremont"
         }
-      },
+      ],
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Montréal",
@@ -603,6 +633,13 @@
     .bio__pairs .pair{grid-template-columns:1fr}
     .bio__pairs .pair>*{max-width:76ch;padding-right:0}
     @media(min-width:760px){.cards{grid-template-columns:1fr 1fr}}
+    .qchips{display:flex;flex-wrap:wrap;gap:var(--s2)}
+    .qchips a{
+        display:inline-flex;align-items:center;min-height:52px;padding:0 18px;
+        border:var(--rule);text-decoration:none;
+        font-size:var(--t-small);font-weight:800;letter-spacing:-0.01em;
+    }
+    .qchips a:hover{background:var(--signal)}
     </style>
 </head>
 <body>
@@ -650,6 +687,7 @@
                     <div class="prose"><h2>How an online lesson runs</h2><p>The lesson takes place over video call and follows exactly the same shape as in studio: warm-up and technique, work on the current repertoire, then a precise practice plan for the week. The meeting link is sent with your booking confirmation and opens in the browser, with no account to create.</p><h2>What you need</h2><ul><li><span class="tick">&#10003;</span> <span>A nylon-string classical guitar, tuned before the lesson.</span></li><li><span class="tick">&#10003;</span> <span>A stable internet connection and a computer, tablet or phone.</span></li><li><span class="tick">&#10003;</span> <span>The camera set at a three-quarter angle, so that the right hand and the fingerboard are visible at the same time.</span></li><li><span class="tick">&#10003;</span> <span>Wired headphones rather than Bluetooth: Bluetooth adds a delay that makes playing together impossible.</span></li><li><span class="tick">&#10003;</span> <span>A music stand, or a table at the right height, and a chair without armrests.</span></li></ul><h2>Who online lessons are for</h2><p>Students who live outside Montreal or in the regions, people whose schedule shifts from week to week, anyone who travels, and parents who would rather not drive across town on a winter evening. Many students alternate: in person every other week, online the rest of the time.</p><h2>What we work on</h2><p>The content does not change: right-hand and left-hand technique, reading, theory, classical repertoire (Sor, Carcassi, Tárrega, Brouwer, Bach transcriptions), and exam, competition or audition preparation when that is the goal.</p><h2>Lengths and formats</h2><p>Sessions of 30, 45 or 60 minutes. You can book a single trial lesson, or a recurring weekly lesson for as many weeks as you like, up to twelve. Payment is by Interac e-Transfer.</p></div>
                     <figure class="shot"><picture><source srcset="/cours-guitare-classique-montreal-2.webp" type="image/webp"><img src="/cours-guitare-classique-montreal-2.jpg" alt="Mark Herz teaching classical guitar to a student" width="1400" height="927" loading="lazy" decoding="async"></picture></figure>
                     <div class="faq"><h2 class="faq__h">Frequently asked questions</h2><h3>Is an online lesson as effective as an in-person one?</h3><p>For fine corrections to right-hand position and nail angle, being in the room is still better. For everything else, reading, musicality, interpretation, the weekly plan, the difference is small as soon as the picture and sound are decent. Alternating between the two usually works best.</p><h3>Which platform do I need to install?</h3><p>None. The video link arrives with your booking confirmation and opens in the browser.</p><h3>Do I need a professional microphone?</h3><p>No. A quiet room and wired headphones matter far more than an expensive microphone.</p><h3>Does it work for a child?</h3><p>Yes, generally from eight or nine years old, and provided a parent is present for the first few sessions to help with tuning and camera placement.</p><h3>Can I take lessons from outside Quebec?</h3><p>Yes, time zones permitting. Lessons are given in English, French or Czech.</p></div>
+                    
                 </div>
             </div>
         </section>
