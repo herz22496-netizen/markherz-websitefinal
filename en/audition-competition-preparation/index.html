@@ -66,16 +66,46 @@
       "founder": {
         "@id": "https://www.markherz.ca/#person"
       },
-      "areaServed": {
-        "@type": "City",
-        "name": "Montréal",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Montréal",
-          "addressRegion": "QC",
-          "addressCountry": "CA"
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Montréal",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Montréal",
+            "addressRegion": "QC",
+            "addressCountry": "CA"
+          }
+        },
+        {
+          "@type": "Place",
+          "name": "Ville-Marie"
+        },
+        {
+          "@type": "Place",
+          "name": "Île-des-Sœurs"
+        },
+        {
+          "@type": "Place",
+          "name": "Hochelaga-Maisonneuve"
+        },
+        {
+          "@type": "Place",
+          "name": "Westmount"
+        },
+        {
+          "@type": "Place",
+          "name": "VilMont-Royal"
+        },
+        {
+          "@type": "Place",
+          "name": "Plateau-Mont-Royal"
+        },
+        {
+          "@type": "Place",
+          "name": "Outremont"
         }
-      },
+      ],
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Montréal",
@@ -603,6 +633,13 @@
     .bio__pairs .pair{grid-template-columns:1fr}
     .bio__pairs .pair>*{max-width:76ch;padding-right:0}
     @media(min-width:760px){.cards{grid-template-columns:1fr 1fr}}
+    .qchips{display:flex;flex-wrap:wrap;gap:var(--s2)}
+    .qchips a{
+        display:inline-flex;align-items:center;min-height:52px;padding:0 18px;
+        border:var(--rule);text-decoration:none;
+        font-size:var(--t-small);font-weight:800;letter-spacing:-0.01em;
+    }
+    .qchips a:hover{background:var(--signal)}
     </style>
 </head>
 <body>
@@ -650,6 +687,7 @@
                     <div class="prose"><h2>What the preparation covers</h2><ul><li><span class="tick">&#10003;</span> <span>Choosing the programme, based on each school's or competition's exact requirements and on what the student plays most convincingly.</span></li><li><span class="tick">&#10003;</span> <span>Memorisation, treated as a skill of its own rather than as a by-product of repetition.</span></li><li><span class="tick">&#10003;</span> <span>Tone, dynamics and musical direction, which is what separates two candidates playing the same notes.</span></li><li><span class="tick">&#10003;</span> <span>Walking on stage: entrance, setting up, tuning in front of a jury, the silence before the first note.</span></li><li><span class="tick">&#10003;</span> <span>Stage nerves, handled through repeated mock auditions rather than general advice.</span></li><li><span class="tick">&#10003;</span> <span>Recording the pre-screening videos.</span></li><li><span class="tick">&#10003;</span> <span>Theory and ear training, where the school tests them.</span></li></ul><h2>A realistic timeline</h2><p>Six to nine months before the date is the comfortable window. Three months is still workable if the technique is already in place. The rule that matters: the programme should be learned and memorised about six weeks before the audition. Those last six weeks are not for learning notes, they are for making the performance consistent day after day, including on a cold February morning in an unfamiliar hall.</p><h2>Montreal schools</h2><p>McGill, the Conservatoire de musique de Montréal, the Université de Montréal and the CEGEP music programmes each have their own repertoire requirements, theory tests and audition culture. Mark did his Bachelor's at McGill and his Master's at the Conservatoire, so he knows both paths from the inside.</p><h2>Competitions</h2><p>Competitions are organised by age and level, often with a set piece. They are useful well beyond the result: they give a date, a hall and an audience, which structures a year of work better than any practice plan.</p><h2>Pre-screening videos</h2><p>Most auditions now start with a video submission. Framing, room sound, the number of takes and the choice of final take are all part of the work: a good performance badly captured is eliminated before it is ever heard.</p></div>
                     <figure class="shot"><picture><source srcset="/cours-guitare-classique-montreal-1.webp" type="image/webp"><img src="/cours-guitare-classique-montreal-1.jpg" alt="Classical guitar lesson with Mark Herz in Montreal" width="1400" height="927" loading="lazy" decoding="async"></picture></figure>
                     <div class="faq"><h2 class="faq__h">Frequently asked questions</h2><h3>How many months ahead should we start?</h3><p>Six to nine months is the comfortable window. Three months remains possible if the technique is already solid.</p><h3>Does the student need to be advanced already?</h3><p>For a university audition, yes: an established technical level is required. Competitions have categories at every age and level.</p><h3>Are preparation lessons longer?</h3><p>The 60-minute format is recommended, because a session needs to fit a full run-through of the programme.</p><h3>Can the preparation be done online?</h3><p>Partly. The weekly work translates well online, but in-person sessions are needed, particularly for mock auditions.</p><h3>Do you help choose the repertoire?</h3><p>Yes. Choosing the programme is the first decision of the whole preparation and it is made together, reading the school's or competition's requirements.</p></div>
+                    
                 </div>
             </div>
         </section>
