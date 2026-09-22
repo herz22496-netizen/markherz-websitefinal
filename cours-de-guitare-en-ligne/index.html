@@ -66,16 +66,46 @@
       "founder": {
         "@id": "https://www.markherz.ca/#person"
       },
-      "areaServed": {
-        "@type": "City",
-        "name": "Montréal",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Montréal",
-          "addressRegion": "QC",
-          "addressCountry": "CA"
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Montréal",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Montréal",
+            "addressRegion": "QC",
+            "addressCountry": "CA"
+          }
+        },
+        {
+          "@type": "Place",
+          "name": "Ville-Marie"
+        },
+        {
+          "@type": "Place",
+          "name": "Île-des-Sœurs"
+        },
+        {
+          "@type": "Place",
+          "name": "Hochelaga-Maisonneuve"
+        },
+        {
+          "@type": "Place",
+          "name": "Westmount"
+        },
+        {
+          "@type": "Place",
+          "name": "VilMont-Royal"
+        },
+        {
+          "@type": "Place",
+          "name": "Plateau-Mont-Royal"
+        },
+        {
+          "@type": "Place",
+          "name": "Outremont"
         }
-      },
+      ],
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Montréal",
@@ -603,6 +633,13 @@
     .bio__pairs .pair{grid-template-columns:1fr}
     .bio__pairs .pair>*{max-width:76ch;padding-right:0}
     @media(min-width:760px){.cards{grid-template-columns:1fr 1fr}}
+    .qchips{display:flex;flex-wrap:wrap;gap:var(--s2)}
+    .qchips a{
+        display:inline-flex;align-items:center;min-height:52px;padding:0 18px;
+        border:var(--rule);text-decoration:none;
+        font-size:var(--t-small);font-weight:800;letter-spacing:-0.01em;
+    }
+    .qchips a:hover{background:var(--signal)}
     </style>
 </head>
 <body>
@@ -650,6 +687,7 @@
                     <div class="prose"><h2>Comment se déroule un cours en ligne</h2><p>Le cours se tient en visioconférence et suit exactement le même déroulement qu'au studio : échauffement et technique, travail du répertoire en cours, puis un plan de pratique précis pour la semaine. Le lien de la rencontre vous est envoyé avec la confirmation de réservation, sans compte à créer.</p><h2>Ce dont vous avez besoin</h2><ul><li><span class="tick">&#10003;</span> <span>Une guitare classique à cordes de nylon, accordée avant le cours.</span></li><li><span class="tick">&#10003;</span> <span>Une connexion internet stable et un ordinateur, une tablette ou un téléphone.</span></li><li><span class="tick">&#10003;</span> <span>La caméra placée de trois quarts, de façon à voir la main droite et le manche en même temps.</span></li><li><span class="tick">&#10003;</span> <span>Des écouteurs filaires plutôt que Bluetooth : le Bluetooth ajoute un décalage qui rend le jeu simultané impossible.</span></li><li><span class="tick">&#10003;</span> <span>Un pupitre, ou une table à bonne hauteur, et une chaise sans accoudoirs.</span></li></ul><h2>À qui s'adressent les cours en ligne</h2><p>Aux élèves qui habitent en dehors de Montréal ou en région, à ceux dont l'horaire change d'une semaine à l'autre, aux gens qui voyagent, et aux parents qui préfèrent éviter le transport un soir d'hiver. Plusieurs élèves alternent : en personne une semaine sur deux, en ligne le reste du temps.</p><h2>Ce qu'on travaille</h2><p>Le contenu ne change pas : technique de la main droite et de la main gauche, lecture, théorie, répertoire classique (Sor, Carcassi, Tárrega, Brouwer, transcriptions de Bach), et préparation d'examen, de concours ou d'audition quand c'est l'objectif.</p><h2>Durées et formules</h2><p>Sessions de 30, 45 ou 60 minutes. Vous pouvez réserver un cours d'essai unique, ou un cours hebdomadaire récurrent pour un nombre de semaines de votre choix, jusqu'à douze. Le paiement se fait par virement Interac.</p></div>
                     <figure class="shot"><picture><source srcset="/cours-guitare-classique-montreal-1.webp" type="image/webp"><img src="/cours-guitare-classique-montreal-1.jpg" alt="Cours de guitare classique avec Mark Herz à Montréal" width="1400" height="927" loading="lazy" decoding="async"></picture></figure>
                     <div class="faq"><h2 class="faq__h">Questions fréquentes</h2><h3>Un cours en ligne est-il aussi efficace qu'un cours en personne ?</h3><p>Pour la correction fine de la position de la main droite et de l'angle des ongles, la présence physique reste supérieure. Pour tout le reste, la lecture, la musicalité, l'interprétation, le plan de travail, la différence est faible dès que l'image et le son sont corrects. La formule qui marche le mieux est souvent l'alternance.</p><h3>Quelle plateforme faut-il installer ?</h3><p>Aucune. Le lien de visioconférence arrive avec la confirmation de réservation et s'ouvre dans le navigateur.</p><h3>Faut-il un micro professionnel ?</h3><p>Non. Une pièce calme et des écouteurs filaires changent beaucoup plus de choses qu'un micro coûteux.</p><h3>Est-ce que ça fonctionne pour un enfant ?</h3><p>Oui, généralement à partir de huit ou neuf ans, et à condition qu'un parent soit présent pour les premières séances afin d'aider avec l'accordage et le cadrage.</p><h3>Puis-je suivre les cours depuis l'extérieur du Québec ?</h3><p>Oui, sous réserve du décalage horaire. Les cours se donnent en français, en anglais ou en tchèque.</p></div>
+                    
                 </div>
             </div>
         </section>
