@@ -558,6 +558,12 @@
         font-size:var(--t-small);font-weight:800;letter-spacing:-0.01em;
     }
     .qchips a:hover{background:var(--signal)}
+
+    /* ---------- Flo (flo.js) : au-dessus de la barre collante, police du site ---------- */
+    :root{--sans:var(--font)}
+    body .flo-btn{bottom:calc(88px + env(safe-area-inset-bottom,0px))}
+    body .flo-nudge{bottom:calc(152px + env(safe-area-inset-bottom,0px))}
+    @media(min-width:761px){body .flo-panel{bottom:88px;height:min(620px,calc(100vh - 106px))}}
     </style>
 </head>
 <body>
@@ -716,6 +722,37 @@
                 stickyCta.style.transform = entries[0].isIntersecting ? 'translateY(110%)' : '';
             }, { threshold: 0.15 }).observe(bookingEl);
         }
+    </script>
+
+    <script>
+      window.SITE = {
+        formEndpoint: "https://matthias-wagner-guitar--cf-leads-web.modal.run/lead/mark-herz",
+        flo: {
+          nom: {fr: "Cours de guitare classique avec Mark Herz", en: "Classical guitar lessons with Mark Herz"},
+          ouverture: {
+            fr: "Bonjour, je suis Flo, je réponds pour Mark. Une question sur les cours, le tarif ou la réservation ?",
+            en: "Hi, I'm Flo, I answer for Mark. A question about lessons, rates or booking?"
+          },
+          rdv: {fr: "#booking", en: "#booking"},
+          tel: "514 371-7662",
+          courriel: "Mark.Herz@mail.mcgill.ca",
+          pied: "Mark Herz, Montréal",
+          qui: "Mark",
+          theme: "clair",
+          accent: "#0A0A0A"
+        }
+      };
+    </script>
+    <script src="/flo.js" data-flo="mark-herz"></script>
+    <script>
+      // Le lien « Réserver » du pied de Flo est une ancre de la page : on referme le panneau pour dévoiler le calendrier.
+      document.addEventListener('click', e => {
+        const a = e.target.closest && e.target.closest('.flo-foot a');
+        if (!a || (a.getAttribute('href') || '').charAt(0) !== '#') return;
+        const panel = document.querySelector('.flo-panel'), btn = document.querySelector('.flo-btn');
+        if (panel) panel.hidden = true;
+        if (btn) btn.hidden = false;
+      });
     </script>
 </body>
 </html>
