@@ -53,7 +53,7 @@
       ],
       "sameAs": [
         "https://www.facebook.com/profile.php?id=100064168329419",
-        "https://www.youtube.com/watch?v=rkMwS4HD-hM",
+        "https://www.youtube.com/@markherz5094",
         "https://www.instagram.com/ipluckdaily/",
         "https://www.conservatoire.gouv.qc.ca/fr/conservatoires/musiquemontreal/nos-finissants/2023-mark-herz/"
       ]
@@ -161,6 +161,7 @@
       },
       "sameAs": [
         "https://www.facebook.com/profile.php?id=100064168329419",
+        "https://www.youtube.com/@markherz5094",
         "https://www.instagram.com/ipluckdaily/"
       ]
     },
@@ -604,6 +605,8 @@
 
     /* ---------- ajouts : navigation multipage, pages intérieures ---------- */
     .hd__r{display:flex;align-items:center;gap:var(--s2)}
+    .socials{display:flex;flex-wrap:wrap;gap:var(--s2);margin-top:var(--s4)}
+    .socials .fb{margin-top:0}
     .langsw{
         display:inline-flex;align-items:center;min-height:40px;padding:0 12px;
         border:var(--rule);text-decoration:none;
@@ -782,10 +785,20 @@
                             514 371-7662
                         </a>
                     </div>
+                    <div class="socials">
                     <a href="https://www.facebook.com/profile.php?id=100064168329419" target="_blank" rel="noopener" class="fb">
                         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
                         <span>Suivre sur Facebook</span>
                     </a>
+                    <a href="https://www.youtube.com/@markherz5094" target="_blank" rel="noopener" class="fb">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M23.5 6.2a3 3 0 00-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 00.5 6.2 31.4 31.4 0 000 12a31.4 31.4 0 00.5 5.8 3 3 0 002.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 002.1-2.1A31.4 31.4 0 0024 12a31.4 31.4 0 00-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+                        <span>Regarder sur YouTube</span>
+                    </a>
+                    <a href="https://www.instagram.com/ipluckdaily/" target="_blank" rel="noopener" class="fb">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                        <span>Suivre sur Instagram</span>
+                    </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -796,7 +809,7 @@
         <a href="#booking" class="btn">Réserver un cours</a>
     </div>
 
-    <footer class="ft"><div class="wrap"><p>&copy; 2026 Mark Herz. Tous droits réservés.</p></div></footer>
+    <footer class="ft"><div class="wrap"><p>&copy; 2026 Mark Herz. Tous droits réservés. &middot; <a href="/confidentialite/">Confidentialité</a></p></div></footer>
 
     <script type="text/javascript">
       (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
