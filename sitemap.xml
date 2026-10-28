@@ -200,4 +200,14 @@
     <xhtml:link rel="alternate" hreflang="en-CA" href="https://www.markherz.ca/en/guitar-lessons-rosemont/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.markherz.ca/cours-de-guitare-rosemont/"/>
     <lastmod>2026-09-22</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.markherz.ca/confidentialite/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://www.markherz.ca/confidentialite/"/>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://www.markherz.ca/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.markherz.ca/confidentialite/"/>
+    <lastmod>2026-09-22</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://www.markherz.ca/en/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://www.markherz.ca/confidentialite/"/>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://www.markherz.ca/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.markherz.ca/confidentialite/"/>
+    <lastmod>2026-09-22</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
 </urlset>
