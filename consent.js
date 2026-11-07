@@ -8,9 +8,9 @@
   var V = 1, KEY = "mh_consent", MAX = 182 * 864e5;
   var en = (document.documentElement.lang || "fr").slice(0, 2) === "en";
   var L = en
-    ? { txt: "This site uses cookies (Google Analytics, Meta) to measure visits and improve ads, only if you agree.",
+    ? { txt: "This site uses cookies (Google Analytics) to measure visits, only if you agree.",
         ok: "Accept", no: "Refuse", more: "Privacy policy", href: "/en/privacy/" }
-    : { txt: "Ce site utilise des témoins (Google Analytics, Meta) pour mesurer les visites et améliorer la publicité, seulement si vous acceptez.",
+    : { txt: "Ce site utilise des témoins (Google Analytics) pour mesurer les visites, seulement si vous acceptez.",
         ok: "Accepter", no: "Refuser", more: "Politique de confidentialité", href: "/confidentialite/" };
 
   var lire = function () {
@@ -28,7 +28,7 @@
     if (T.ga) {
       window.dataLayer = window.dataLayer || [];
       window.gtag = function () { window.dataLayer.push(arguments); };
-      gtag("consent", "default", { ad_storage: "granted", analytics_storage: "granted", ad_user_data: "granted", ad_personalization: "granted" });
+      gtag("consent", "default", { ad_storage: "denied", analytics_storage: "granted", ad_user_data: "denied", ad_personalization: "denied" });
       gtag("js", new Date());
       gtag("config", T.ga);
       var s = document.createElement("script"); s.async = true;
