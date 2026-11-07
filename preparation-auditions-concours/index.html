@@ -854,7 +854,7 @@
         <a href="#booking" class="btn">Réserver un cours</a>
     </div>
 
-    <footer class="ft"><div class="wrap"><p>&copy; 2026 Mark Herz. Tous droits réservés. &middot; <a href="/confidentialite/">Confidentialité</a></p></div></footer>
+    <footer class="ft"><div class="wrap"><p>&copy; 2026 Mark Herz. Tous droits réservés. &middot; <a href="/confidentialite/">Confidentialité</a> &middot; <a href="#" data-mh-consent>Paramètres des témoins</a></p></div></footer>
 
     <script type="text/javascript">
       (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
@@ -862,6 +862,9 @@
         Cal("init", {origin:"https://cal.com"});
         Cal("inline", {elementOrSelector:"#cal-inline", calLink: "mark-herz-54dmrh", layout: "month_view"});
         Cal("ui", {"theme":"light","styles":{"branding":{"brandColor":"#0A0A0A"}},"hideEventTypeDetails":false});
+        var calDone = false, calBooked = function () { if (calDone) return; calDone = true; if (window.mhTrack) mhTrack("booking"); };
+        Cal("on", {action: "bookingSuccessful", callback: calBooked});
+        Cal("on", {action: "bookingSuccessfulV2", callback: calBooked});
       };
       var calTarget = document.getElementById('booking') || document.getElementById('cal-inline');
       if (calTarget && 'IntersectionObserver' in window) {
@@ -920,6 +923,8 @@
         if (btn) btn.hidden = false;
       });
     </script>
+    <script>window.MH_TRACK = {"ga": "G-FNK5JJ4N8X", "px": ""};</script>
+    <script src="/consent.js"></script>
 <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2c37f9ab19d4424c8fcc1e2d8bead845"}'>
 </script>
 </body>
