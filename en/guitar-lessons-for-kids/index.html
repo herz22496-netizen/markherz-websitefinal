@@ -560,7 +560,13 @@
     .book__cal .pair{grid-template-columns:1fr}
     .book__cal .pair>*{padding:var(--s3) 0}
     .book__cal .pair>*+*{border-top:0;border-left:0;padding:0 0 var(--s3)}
-    #cal-inline{margin-top:var(--s2);background:var(--paper)}
+    /* hauteur réservée au calendrier Cal.com, selon la largeur de sa colonne (mesuré le 2026-11-12) : évite le saut de page (CLS) */
+    .book__calbox{container-type:inline-size}
+    #cal-inline{margin-top:var(--s2);background:var(--paper);min-height:996px}
+    @container (min-width:328px){#cal-inline{min-height:976px}}
+    @container (min-width:436px){#cal-inline{min-height:916px}}
+    /* pendant le chargement, Cal.com range l'iframe sous son squelette puis la remonte : on la garde en haut dès le départ */
+    #cal-inline iframe[style*="height: 100%"]{position:absolute!important;top:0;left:0}
     .pay{border-top:var(--rule);margin-top:var(--s3);padding:var(--s3) 0 0}
     .pay p{font-size:var(--t-small);line-height:1.5}
     .pay p+p{margin-top:var(--s2)}
@@ -797,7 +803,7 @@
                         <div class="book__cal">
                             <div class="book__t"><h3>Book a lesson</h3></div>
                             <p style="padding:var(--s3) 0">Choose a lesson length and a time that works for you: the booking is confirmed in my calendar right away.</p>
-                            <div id="cal-inline" style="width:100%;min-height:640px;overflow:auto;"></div>
+                            <div class="book__calbox"><div id="cal-inline" style="width:100%;overflow:auto;"></div></div>
                             <div class="pay">
                                 <p><span class="tag">Payment information</span></p>
                                 <p>Payment is handled in person by Interac e-Transfer or cash.</p>
