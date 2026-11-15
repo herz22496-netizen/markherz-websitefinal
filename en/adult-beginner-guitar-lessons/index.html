@@ -62,7 +62,10 @@
       ]
     },
     {
-      "@type": "MusicSchool",
+      "@type": [
+        "LocalBusiness",
+        "EducationalOrganization"
+      ],
       "@id": "https://www.markherz.ca/#business",
       "name": "Mark Herz – Cours de guitare classique",
       "alternateName": "Mark Herz – Classical Guitar Lessons",
@@ -71,6 +74,7 @@
       "telephone": "+1-514-371-7662",
       "email": "Mark.Herz@mail.mcgill.ca",
       "image": "https://www.markherz.ca/mark-herz-portrait.jpg",
+      "logo": "https://www.markherz.ca/favicon-192.png",
       "founder": {
         "@id": "https://www.markherz.ca/#person"
       },
@@ -193,8 +197,22 @@
       "sameAs": [
         "https://www.facebook.com/profile.php?id=100064168329419",
         "https://www.youtube.com/@markherz5094",
-        "https://www.instagram.com/ipluckdaily/"
+        "https://www.instagram.com/ipluckdaily/",
+        "https://www.yelp.ca/biz/mark-herz-montr%C3%A9al"
       ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.markherz.ca/#website",
+      "url": "https://www.markherz.ca/",
+      "name": "Mark Herz",
+      "inLanguage": [
+        "fr-CA",
+        "en-CA"
+      ],
+      "publisher": {
+        "@id": "https://www.markherz.ca/#business"
+      }
     },
     {
       "@type": "WebPage",
@@ -204,7 +222,7 @@
       "description": "Classical guitar lessons for adults in Montreal, at home or online: the first three months week by week, which guitar to buy, fifteen minutes of practice a day.",
       "inLanguage": "en-CA",
       "isPartOf": {
-        "@id": "https://www.markherz.ca/#business"
+        "@id": "https://www.markherz.ca/#website"
       },
       "about": {
         "@id": "https://www.markherz.ca/#person"
@@ -249,11 +267,6 @@
           "@type": "City",
           "name": "Longueuil"
         }
-      ],
-      "availableLanguage": [
-        "fr",
-        "en",
-        "cs"
       ]
     },
     {
