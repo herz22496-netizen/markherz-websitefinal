@@ -63,6 +63,8 @@
     } else if (nom === "contact") {
       if (window.gtag) gtag("event", "contact", { method: info || "" });
       if (window.fbq) fbq("track", "Contact");
+    } else if (nom === "guide") {
+      if (window.gtag) gtag("event", "sign_up", { method: "guide" });
     }
   };
   document.addEventListener("click", function (e) {
