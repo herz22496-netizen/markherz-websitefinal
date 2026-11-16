@@ -931,9 +931,27 @@
         }
     </script>
 
+    <script>
+    /* Visites internes (Matthias, Mark) : ouvrir une fois ?interne=1 dans un navigateur et il n'est plus compté,
+       ni par Cloudflare Web Analytics ni par GA4 (consent.js lit window.MH_INTERNE). ?interne=0 annule. */
+    (function () {
+        var K = 'mh_interne', m = /[?&]interne=([01])(&|$)/.exec(location.search), on = false;
+        try {
+            if (m) { if (m[1] === '1') localStorage.setItem(K, '1'); else localStorage.removeItem(K); }
+            on = localStorage.getItem(K) === '1';
+        } catch (e) {}
+        window.MH_INTERNE = on;
+        if (m) alert(on ? 'Mode interne : les visites de ce navigateur ne sont plus comptées.'
+                        : 'Mode interne désactivé : les visites de ce navigateur sont comptées.');
+        if (on) return;
+        var s = document.createElement('script');
+        s.type = 'module';
+        s.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+        s.setAttribute('data-cf-beacon', '{"token": "2c37f9ab19d4424c8fcc1e2d8bead845"}');
+        document.body.appendChild(s);
+    })();
+    </script>
     <script>window.MH_TRACK = {"ga": "G-FNK5JJ4N8X", "px": ""};</script>
     <script src="/consent.js"></script>
-<script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2c37f9ab19d4424c8fcc1e2d8bead845"}'>
-</script>
 </body>
 </html>
