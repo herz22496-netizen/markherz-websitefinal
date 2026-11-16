@@ -24,7 +24,7 @@
 
   var charge = false;
   var charger = function () {
-    if (charge || window.MH_INTERNE) return; charge = true;   // MH_INTERNE : navigateur de Matthias ou de Mark (?interne=1), jamais compté
+    if (charge) return; charge = true;
     if (T.ga) {
       window.dataLayer = window.dataLayer || [];
       window.gtag = function () { window.dataLayer.push(arguments); };
